@@ -1,0 +1,5 @@
+!contents -R2 -g -p -f -h
+
+Omschrijving van het project:
+Voor Heineken Nederland nemen wij de automatische testen waar voor het klant portaal.
+
