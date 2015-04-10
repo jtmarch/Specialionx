@@ -118,7 +118,8 @@
       <dependency>
           <groupId>org.fitnesse</groupId>
           <artifactId>fitnesse-git-plugin</artifactId>
-          <version>1.2-SNAPSHOT</version>
+          <!-- Custom version created to work with fitnesse version: 20130530 -->
+          <version>1.3-SNAPSHOT</version>
       </dependency>
 
     <!-- test dependencies -->
