@@ -1,7 +1,7 @@
 !1 Specialisterren
 
-!2 Klanten
-ProjectenHeineken
+!2 Klanten:
+[[Projecten Heineken][ProjectenHeineken]]
 
 
 !3 Press image below to enter the project
