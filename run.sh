@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Make sure we have our jars close at hand.
-# mvn dependency:copy-dependencies
+#mvn dependency:copy-dependencies
 
 # Standard options:
 # -o -e 0

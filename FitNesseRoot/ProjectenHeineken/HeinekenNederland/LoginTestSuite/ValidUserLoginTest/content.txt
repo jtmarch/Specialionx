@@ -1,5 +1,3 @@
-'''!include .ProjectenHeineken.SetUp'''
-
 !contents -R2 -g -p -f -h
 Deze test test het succesvol inloggen van een geauthenticeerde gebruiker op het klant portaal van Heineken Nederland.
 
@@ -8,8 +6,9 @@ Deze test test het succesvol inloggen van een geauthenticeerde gebruiker op het 
 !define PASSWORD {Testuser1}
 !| script | selenium driver fixture |
 | start browser | ${BROWSER} | on url | http://localhost:${FITNESSE_PORT}/ |
-| ensure | do | open | on | ${PAGE} |
+| ensure | do | open | on | Heineken® |
 | check | is | waitForTitle | ${PAGE_PATH}.${PAGE_NAME} |
 | ensure | do | verifyTextPresent | on | Xebium |
 | check | is | verifyText | on | css=h1 | ${PAGE_NAME} |
 | stop browser |
+
