@@ -4,11 +4,35 @@ Deze test test het succesvol inloggen van een geauthenticeerde gebruiker op het 
 !define PAGE {https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop}
 !define USER {jtmarch2002@hotmail.com}
 !define PASSWORD {Testuser1}
-!| script | selenium driver fixture |
+
+!| scenario | Start Heineken page |
 | start browser | ${BROWSER} | on url | http://localhost:${FITNESSE_PORT}/ |
-| ensure | do | open | on | Heineken® |
-| check | is | waitForTitle | ${PAGE_PATH}.${PAGE_NAME} |
-| ensure | do | verifyTextPresent | on | Xebium |
-| check | is | verifyText | on | css=h1 | ${PAGE_NAME} |
+| ensure | do | open | on | ${PAGE} |
+| check | is | waitForTitle | Heineken® |
+
+!| scenario | Doorloop geboortedatum check |
+| ensure | do | type | on | id=ctl16_DayTextBox | with | 08 |
+| ensure | do | type | on | id=ctl16_MonthTextBox | with | 07 |
+| ensure | do | type | on | id=ctl16_YearTextBox | with | 81 |
+| ensure | do | click | on | id=ctl16_SubmitLink |
+| check | is | waitForTitle | !-Login of Registreer|Login-! |
+
+!| scenario | Login user _ | user |
+| ensure | do | type | on | id=content_1_right_0_txtEmail | with | @user |
+| ensure | do | type | on | id=content_1_right_0_txtWachtwoord | with | ${PASSWORD} |
+| ensure | do | clickAndWait | on | id=content_1_right_0_lbnLogin |
+
+!| script | selenium driver fixture |
+| Start Heineken page |
+| Doorloop geboortedatum check |
+| Login user | ${USER} |
+| check | is | waitForTitle | !-Heineken® | Winkel-! |
 | stop browser |
 
+!| script | selenium driver fixture |
+| Start Heineken page |
+| Doorloop geboortedatum check |
+| Login user | invalidUser |
+| ensure | do | waitForText | on | id=content_1_right_0_ctl04 | with | E-mailadres is onjuist |
+| check | is | verifyText | on | id=content_1_right_0_ctl04 | E-mailadres is onjuist |
+| stop browser |

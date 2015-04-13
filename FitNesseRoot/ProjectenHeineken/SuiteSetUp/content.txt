@@ -1,1 +1,2 @@
-!3 This suite setup page is automatically executed before each suite
+This suite setup page is automatically executed before each suite
+

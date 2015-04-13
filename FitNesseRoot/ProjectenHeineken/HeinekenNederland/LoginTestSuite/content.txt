@@ -1,3 +1,6 @@
 !contents -R2 -g -p -f -h
 
 Deze suite bevat alle testen met betrekking tot de login op het klant portaal van Heineken Nederland.
+
+!3 Scenario's
+
