@@ -1,5 +1,4 @@
-!contents -R2 -g -p -f -h
-Global Includes
+!4 Global Includes:
 
 !| scenario | Start Heineken page |
 | start browser | ${BROWSER} | on url | http://localhost:${FITNESSE_PORT}/ |
