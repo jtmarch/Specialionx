@@ -2,16 +2,12 @@
 .classpath
 .project
 .settings/
-FitNesseRoot/FitNesse/
 FitNesseRoot/ErrorLogs/
 FitNesseRoot/RecentChanges/
-FitNesseRoot/files/
-FitNesseRoot/properties
 FitNesseRoot/updateDoNotCopyOverList
 FitNesseRoot/updateList
+FitNesseRoot/files/testResults
 target/
 *.log
 .idea
 *.iml
-saucelabs.properties
-atlassian-ide-plugin.xml
