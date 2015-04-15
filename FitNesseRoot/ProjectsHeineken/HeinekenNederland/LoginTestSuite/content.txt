@@ -1,4 +1,3 @@
-
 Suite containing login and logout scenarios for the Heineken Customer Portal Nederland.
 
 !3 Scenarios
