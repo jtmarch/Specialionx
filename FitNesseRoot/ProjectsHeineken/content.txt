@@ -1,6 +1,12 @@
-!3 Projecten bij Heineken:
-[[Heineken Nederland][ProjectenHeineken.HeinekenNederland]]
-[[Heineken Belgie][ProjectenHeineken.HeinekenBelgie]]
+!3 Projects at Heineken:
+[[Heineken Nederland][ProjectsHeineken.HeinekenNederland]]
+[[Heineken Belgie][ProjectsHeineken.HeinekenBelgie]]
+
+
+
+
+
+
 
 !contents -R2 -g -p -f -h
 

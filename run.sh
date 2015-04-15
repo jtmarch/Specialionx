@@ -8,5 +8,9 @@
 
 
 # java -Xmx256m -DmavenRepo="${M2_REPO}" -cp ${M2_REPO}/org/fitnesse/fitnesse/20100303/fitnesse-20100303.jar fitnesseMain.FitNesseMain -p 8001 -o -e 0 $1 $2 $3 $4 $5
+
+echo $MAVEN_HOME
+echo $PATH
+
 set CM_SYSTEM=org.fitnesse.plugins.GitScm
 mvn -Pfitnesse test

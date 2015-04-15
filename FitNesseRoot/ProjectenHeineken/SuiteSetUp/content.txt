@@ -1,2 +1,0 @@
-This suite setup page is automatically executed before each suite
-

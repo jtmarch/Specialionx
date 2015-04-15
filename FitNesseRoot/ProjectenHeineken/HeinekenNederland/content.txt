@@ -1,8 +1,0 @@
-!contents -R2 -g -p -f -h
-
-!3 Omschrijving project:
-Voor Heineken Nederland nemen wij alle automatische testen waar voor het klant portaal.
-
-!3 Functionele opdeling:
-- Login
-

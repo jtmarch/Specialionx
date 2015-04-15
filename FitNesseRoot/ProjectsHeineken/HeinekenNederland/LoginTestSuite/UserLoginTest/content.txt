@@ -1,6 +1,3 @@
-!contents -R2 -g -p -f -h
-Deze test test het succesvol inloggen van een geauthenticeerde gebruiker op het klant portaal van Heineken Nederland.
-
 !*****> Initial setup
 !*****> Variables
 !define PAGE {https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop}
@@ -16,12 +13,16 @@ Deze test test het succesvol inloggen van een geauthenticeerde gebruiker op het 
 **********!
 **********!
 
+!style_fit_label['''Test valid user logon.''']
+
 !| script | selenium driver fixture |
 | Start Heineken page |
 | Doorloop geboortedatum check |
 | Login user | ${USER} |
 | check | is | waitForTitle | !-Heineken® | Winkel-! |
 | stop browser |
+
+!style_fit_label['''Test invalid user - wrong e-mail.''']
 
 !| script | selenium driver fixture |
 | Start Heineken page |

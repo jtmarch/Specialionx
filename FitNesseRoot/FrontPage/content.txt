@@ -1,4 +1,12 @@
-!1 Specialisterren
+!img http://files/images/specialisterren_transparant_logo_4.png
 
-!2 Klanten:
-[[Projecten Heineken][ProjectenHeineken]]
+!2 Clients:
+ * [[Projects Heineken][ProjectsHeineken]]
+ * [[Projects Kpn][ProjectsHeineken]]
+
+
+
+
+
+
+
