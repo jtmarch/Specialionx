@@ -1,6 +1,9 @@
+!3 Projecten bij Heineken:
+[[Heineken Nederland][ProjectenHeineken.HeinekenNederland]]
+[[Heineken Belgie][ProjectenHeineken.HeinekenBelgie]]
+
 !contents -R2 -g -p -f -h
 
-<<<<<<< HEAD
 !*> '''Variables Defined'''
 
 !define TEST_SYSTEM {slim}
@@ -9,7 +12,5 @@
 !*****> '''Classpath'''
 !pomFile pom.xml@runtime
 *****!
-=======
-[[Heineken Nederland][HeinekenNederland]]
-[[Heineken Belgie][HeinekenBelgie]]
->>>>>>> 17990b6349f288428f0b495948d2d460d3433644
+
+
