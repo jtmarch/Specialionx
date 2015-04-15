@@ -7,6 +7,7 @@ FitNesseRoot/RecentChanges/
 FitNesseRoot/updateDoNotCopyOverList
 FitNesseRoot/updateList
 FitNesseRoot/files/testResults
+FitNesseRoot/files/testProgress
 target/
 *.log
 .idea
