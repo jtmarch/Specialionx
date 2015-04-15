@@ -1,9 +1,10 @@
-
 Suite containing login and logout scenarios for the Heineken Customer Portal Nederland.
 
 !3 Scenarios
  * [[Login scenarios (valid and invalid users)][LoginTestSuite.UserLoginTest]]
  * [[Logout scenarios][LoginTestSuite.LogoutTest]]
+ * [[Edit user scenarios][LoginTestSuite.EditUserTest]]
+
 
 
 
