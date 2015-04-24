@@ -1,0 +1,18 @@
+!style_fit_label['''Test valid user logon.''']
+
+!| script | selenium driver fixture |
+| Start Heineken page |
+| Doorloop geboortedatum check |
+| Login user | ${USER} |
+| check | is | waitForTitle | !-Heineken® | Winkel-! |
+| stop browser |
+
+!style_fit_label['''Test invalid user - wrong e-mail.''']
+
+!| script | selenium driver fixture |
+| Start Heineken page |
+| Doorloop geboortedatum check |
+| Login user | invalidUser |
+| ensure | do | waitForText | on | id=content_1_right_0_ctl04 | with | E-mailadres is onjuist |
+| check | is | verifyText | on | id=content_1_right_0_ctl04 | E-mailadres is onjuist |
+| stop browser |

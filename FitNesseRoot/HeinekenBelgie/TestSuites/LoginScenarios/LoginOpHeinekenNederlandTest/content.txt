@@ -1,0 +1,15 @@
+
+!define USER {jelle@hotmail.com}
+
+!include -c <HeinekenSharedContext.SharedVariables
+!include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.StartUpInclude
+
+!include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.SharedLoginScenario
+
+!| script | selenium driver fixture |
+| Succesvolle login test |
+
+!| script | selenium driver fixture |
+| Foutieve email bij login |
+
+!contents -R2 -g -p -f -h
