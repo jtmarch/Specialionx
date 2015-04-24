@@ -1,0 +1,13 @@
+!4 Global Includes:
+
+!| scenario | Start Heineken page |
+| start browser | ${BROWSER} | on url | http://localhost:${FITNESSE_PORT}/ |
+| ensure | do | open | on | ${PAGE} |
+| check | is | waitForTitle | Heineken® |
+
+!| scenario | Doorloop geboortedatum check |
+| ensure | do | type | on | id=ctl16_DayTextBox | with | 08 |
+| ensure | do | type | on | id=ctl16_MonthTextBox | with | 07 |
+| ensure | do | type | on | id=ctl16_YearTextBox | with | 81 |
+| ensure | do | click | on | id=ctl16_SubmitLink |
+| check | is | waitForTitle | !-Login of Registreer|Login-! |

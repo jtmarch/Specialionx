@@ -1,0 +1,31 @@
+!include -c <HeinekenSharedContext.SharedVariables
+!include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.StartUpInclude
+!*****> Local Scenario's
+!| scenario | Login user _ | user |
+| ensure | do | type | on | id=content_1_right_0_txtEmail | with | @user |
+| ensure | do | type | on | id=content_1_right_0_txtWachtwoord | with | ${PASSWORD} |
+| ensure | do | clickAndWait | on | id=content_1_right_0_lbnLogin |
+**********!
+
+
+!style_fit_label['''Test valid user logon.''']
+
+!| script | selenium driver fixture |
+| Start Heineken page |
+| Doorloop geboortedatum check |
+| Login user | ${USER} |
+| check | is | waitForTitle | !-Heineken® | Winkel-! |
+| stop browser |
+
+!style_fit_label['''Test invalid user - wrong e-mail.''']
+
+!| script | selenium driver fixture |
+| Start Heineken page |
+| Doorloop geboortedatum check |
+| Login user | invalidUser |
+| ensure | do | waitForText | on | id=content_1_right_0_ctl04 | with | E-mailadres is onjuist |
+| check | is | verifyText | on | id=content_1_right_0_ctl04 | E-mailadres is onjuist |
+| stop browser |
+
+
+!contents -R2 -g -p -f -h
