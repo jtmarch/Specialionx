@@ -1,3 +1,4 @@
 !define PAGE {https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop}
 !define USER {jtmarch2002@hotmail.com}
 !define PASSWORD {Testuser1}
+!define BROWSER {iexplore}
