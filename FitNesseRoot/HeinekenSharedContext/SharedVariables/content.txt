@@ -1,5 +1,7 @@
-| script | fetch properties | result?       |
-|        |                  | userProperty= |
+!| properties provider | 
+| fetch properties? | 
+| $userProperty=    | 
+
 
 
 !define PAGE {https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop}

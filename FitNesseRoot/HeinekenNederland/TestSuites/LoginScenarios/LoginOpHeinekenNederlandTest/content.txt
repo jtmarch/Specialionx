@@ -2,7 +2,7 @@
 !include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.StartUpInclude
 !*****> Local Scenario's
 !| scenario | Login user _ | user |
-| ensure | do | type | on | id=content_1_right_0_txtEmail | with | userProperty= |
+| ensure | do | type | on | id=content_1_right_0_txtEmail | with | $userProperty |
 | ensure | do | type | on | id=content_1_right_0_txtWachtwoord | with | ${PASSWORD} |
 | ensure | do | clickAndWait | on | id=content_1_right_0_lbnLogin |
 **********!
