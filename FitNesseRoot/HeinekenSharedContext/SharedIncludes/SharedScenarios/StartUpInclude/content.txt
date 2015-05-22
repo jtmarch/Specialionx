@@ -1,7 +1,7 @@
 !4 Global Includes:
 
 !| scenario | Start Heineken page |
-| start browser | ${BROWSER} | on url | https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop |
+| start browser | $browser | on url | https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop |
 | ensure | do | open | on | ${PAGE} |
 | check | is | waitForTitle | Heineken® |
 
