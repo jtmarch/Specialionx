@@ -1,6 +1,7 @@
 | properties provider | heineken |
 | property name | get property? |
-| browser       | $browser=     | 
+| browser       | $browser=     |
+| heineken.url  | $pageUrl=     | 
 
 
 
