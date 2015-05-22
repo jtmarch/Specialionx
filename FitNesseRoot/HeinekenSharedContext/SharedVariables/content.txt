@@ -1,6 +1,6 @@
-!| properties provider | heineken |
-| get property? | 
-| browser | $browser= | 
+| properties provider | heineken |
+| property name | get property? |
+| browser       | $browser=     | 
 
 
 

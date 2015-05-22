@@ -6,4 +6,3 @@
 
 | library |
 | selenium driver fixture |
-| properties provider |
