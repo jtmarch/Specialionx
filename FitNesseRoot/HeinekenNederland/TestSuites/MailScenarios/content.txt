@@ -4,8 +4,8 @@
 !style_fit_label['''Test mail scenarios.''']
 
 | mail fixture |
-| get mail | 
-| subject |      |
-| body    |      | 
+| part    | get mail part? | 
+| subject |           |
+| body    |           | 
 
 !contents -R2 -g -p -f -h
