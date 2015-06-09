@@ -1,0 +1,11 @@
+!include -c <HeinekenSharedContext.SharedVariables
+!include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.StartUpInclude
+
+!style_fit_label['''Test mail scenarios.''']
+
+| mail fixture |
+| get mail | 
+| subject |      |
+| body    |      | 
+
+!contents -R2 -g -p -f -h
