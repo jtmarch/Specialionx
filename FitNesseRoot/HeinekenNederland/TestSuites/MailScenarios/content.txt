@@ -10,6 +10,7 @@
 
 
 !| script | selenium driver fixture |
+| do | set mail provider with protocol | imaps | host | imap.one.com | user | ilionx@4family.nl | and password | wachtwoord |
 | ensure | mail received which contains | HHN 00048248 | from | jdebruin@ilionx.com | on date | 10-06-2015 |
 
 !contents -R2 -g -p -f -h
