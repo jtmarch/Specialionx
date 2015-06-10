@@ -4,7 +4,7 @@
 !style_fit_label['''Test mail scenarios.''']
 
 !| script | selenium driver fixture |
-| convert datum | 2015-10-06 | with format | yyyy-dd-MM | to format | dd-MM-yyyy | result? |
+| convert datum | 2015-10-06 | with format | yyyy-dd-MM | to format | dd-MM-yyyy | $result= |
 | set mail provider with protocol | imaps | host | imap.one.com | user | ilionx@4family.nl | and password | wachtwoord |
 | ensure | mail received which contains | HHN 00048248 | from | jdebruin@ilionx.com | on date | 10-06-2015 |
 
