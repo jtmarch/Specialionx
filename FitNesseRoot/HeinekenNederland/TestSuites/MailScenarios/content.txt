@@ -8,4 +8,8 @@
 | subject |           |
 | content |           | 
 
+
+!| script | selenium driver fixture |
+| check | is | waitForTitle | !-Heineken® | Winkel-! |
+
 !contents -R2 -g -p -f -h
