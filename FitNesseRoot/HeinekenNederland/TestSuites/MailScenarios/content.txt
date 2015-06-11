@@ -7,9 +7,12 @@
 !define q {5}
 !define d {${= ${n} - ${q} =}}
 
+!define uniqueid {${= Vandaag ${!today} =}}
+
 !| script | selenium driver fixture |
 | $resultingDate= | convert datum | 2015-${= ${n} - ${q} =}-06 | with format | yyyy-dd-MM | to format | dd-MM-yyyy |
-| set mail provider with protocol | imaps | host | imap.one.com | user | ilionx@4family.nl | and password | wachtwoord |
-| ensure | mail received which contains | HHN 00048248 | from | jdebruin@ilionx.com | on date | $resultingDate |
+| set mail provider with protocol | imaps | host | imap.one.com:993 | user | ilionx@4family.nl | and password | wachtwoord | and host for sending | send.one.com |
+| send mail to | ilionx@4family.nl | from | ilionx@4family.nl | with subject | Some subject | and content | ${uniqueid} |
+| ensure | mail received which contains | ${uniqueid} | from | ilionx@4family.nl | on date | |
 
 !contents -R2 -g -p -f -h
