@@ -14,5 +14,6 @@
 | set mail provider with protocol | imaps | host | imap.one.com:993 | user | ilionx@4family.nl | and password | wachtwoord | and host for sending | send.one.com |
 | send mail to | ilionx@4family.nl | from | ilionx@4family.nl | with subject | Some subject | and content | ${uniqueid} |
 | ensure | mail received which contains | ${uniqueid} | from | ilionx@4family.nl | on date | |
+| ensure | mail contains field | from | with value | ilionx@4family.nl |
 
 !contents -R2 -g -p -f -h
