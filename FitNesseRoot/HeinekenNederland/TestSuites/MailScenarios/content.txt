@@ -12,7 +12,7 @@
 !| script | selenium driver fixture |
 | $resultingDate= | convert datum | 2015-${= ${n} - ${q} =}-06 | with format | yyyy-dd-MM | to format | dd-MM-yyyy |
 | set mail provider with protocol | imaps | host | imap.one.com:993 | user | ilionx@4family.nl | and password | wachtwoord | and host for sending | send.one.com |
-| send mail to | ilionx@4family.nl | from | ilionx@4family.nl | with subject | Some subject with a link <a href="http://www.nu.nl" target="_blank">Nu het laatste nieuws</a> and more bla.. | and content | ${uniqueid} |
+| send mail to | ilionx@4family.nl | from | ilionx@4family.nl | with subject | Some subject | and content | ${uniqueid} and with a link <a href="http://www.nu.nl" target="_blank">Nu het laatste nieuws</a> and more bla.. |
 | ensure | mail received which contains | ${uniqueid} | from | ilionx@4family.nl | on date | |
 | ensure | mail contains field | from | with value | ilionx@4family.nl |
 | $externalLink= | get external link from mail with label | laatste nieuws |
