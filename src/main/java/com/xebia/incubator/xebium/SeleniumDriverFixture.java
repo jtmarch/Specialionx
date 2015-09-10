@@ -18,6 +18,7 @@
 
 package com.xebia.incubator.xebium;
 
+import com.ilionx.nl.ExtendedSeleniumDriverFixtures;
 import com.thoughtworks.selenium.CommandProcessor;
 import com.thoughtworks.selenium.HttpCommandProcessor;
 import com.thoughtworks.selenium.SeleniumException;
@@ -40,7 +41,7 @@ import static org.apache.commons.lang.StringUtils.join;
 /**
  * Main fixture. Starts a browser session and execute commands.
  */
-public class SeleniumDriverFixture {
+public class SeleniumDriverFixture extends ExtendedSeleniumDriverFixtures {
 
 	private static final Logger LOG = LoggerFactory.getLogger(SeleniumDriverFixture.class);
 

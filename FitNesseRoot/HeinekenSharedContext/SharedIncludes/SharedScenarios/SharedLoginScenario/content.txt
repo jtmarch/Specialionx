@@ -1,15 +1,20 @@
+!| scenario | Login user |
+| ensure | do | type | on | id=content_1_right_0_txtEmail | with | ${USER} |
+| ensure | do | type | on | id=content_1_right_0_txtWachtwoord | with | ${PASSWORD} |
+| ensure | do | clickAndWait | on | id=content_1_right_0_lbnLogin |
+
 !style_fit_label['''Test valid user logon.''']
 
-!| script | selenium driver fixture |
+!| scenario | Succesvolle login test |
 | Start Heineken page |
 | Doorloop geboortedatum check |
-| Login user | ${USER} |
+| Login user |
 | check | is | waitForTitle | !-Heineken® | Winkel-! |
 | stop browser |
 
 !style_fit_label['''Test invalid user - wrong e-mail.''']
 
-!| script | selenium driver fixture |
+!| scenario | Foutieve email bij login |
 | Start Heineken page |
 | Doorloop geboortedatum check |
 | Login user | invalidUser |

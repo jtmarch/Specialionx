@@ -1,7 +1,3 @@
-
-!define USER {jelle@hotmail.com}
-
-!include -c <HeinekenSharedContext.SharedVariables
 !include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.StartUpInclude
 
 !include -c <HeinekenSharedContext.SharedIncludes.SharedScenarios.SharedLoginScenario
