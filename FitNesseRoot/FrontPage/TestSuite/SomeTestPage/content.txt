@@ -1,1 +1,5 @@
 !contents -R2 -g -p -f -h
+
+| Add | 7 | Products With ProductId | 0740 | To ShoppingCart |
+| Add | 2 | Products With ProductId | 0740 | To ShoppingCart |
+| ensure | that the total price of the products in the shopping cart is | 200 |
