@@ -4,6 +4,7 @@
 | com.xebia.incubator.xebium |
 | com.ilionx.nl.properties |
 | com.ilionx.nl.mail |
+| com.ilionx.nl.products |
 
 | library |
 | selenium driver fixture |
