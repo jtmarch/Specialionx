@@ -5,6 +5,7 @@
 | com.ilionx.nl.properties |
 | com.ilionx.nl.mail |
 | com.ilionx.nl.products |
+| com.ilionx.nl.soap |
 
 | library |
 | selenium driver fixture |
