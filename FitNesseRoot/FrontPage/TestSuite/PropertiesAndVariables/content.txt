@@ -6,4 +6,11 @@
 | nrOfProducts  | $nrOfProducts=     | 
 | someUrl       | $someUrl=     | 
 
+
+| DT:Some Decision Table |
+| input |	output? |
+|3 |	<5 |
+|5 |	>=3 |
+|8 |	3<_<9 |
+
 !contents -R2 -g -p -f -h
