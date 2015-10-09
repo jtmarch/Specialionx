@@ -8,10 +8,13 @@
 | favorite.product | $product=     | 
 | product.price | $price= |
 
+!define someVar {${= price =}}
+!define someVar2 {${= 2+3 =}}
+!define someVar3 {${= product =}}
 
 !| script | products fixture |
-| add | $nrOfProducts | Products With ProductId | $product | To ShoppingCart |
+| add | ${someVar2}  | Products With ProductId | ${someVar3} | To ShoppingCart |
 | add | 2 | Products With ProductId | $product | To ShoppingCart |
-| ensure | that the total price of the products in the shopping cart is | ($nrOfProducts + 2) * $price |
+| ensure | that the total price of the products in the shopping cart is | ${=$nrOfProducts+2=} ${=$price=} |
 
 !contents -R2 -g -p -f -h
