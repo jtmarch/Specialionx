@@ -5,12 +5,13 @@
 | productPrice  | $productPrice=     | 
 | nrOfProducts  | $nrOfProducts=     | 
 | someUrl       | $someUrl=     | 
+| favorite.product | $product=     | 
+| product.price | $price= |
 
 
-| DT:Some Decision Table |
-| input |	output? |
-|3 |	<5 |
-|5 |	>=3 |
-|8 |	3<_<9 |
+!| script | products fixture |
+| add | $nrOfProducts | Products With ProductId | $product | To ShoppingCart |
+| add | 2 | Products With ProductId | $product | To ShoppingCart |
+| ensure | that the total price of the products in the shopping cart is | ($nrOfProducts + 2) * $price |
 
 !contents -R2 -g -p -f -h
