@@ -3,6 +3,6 @@
 | set template parameter | valueForTemplate | with value | helloworld |
 | send soap message to | http://www.webservicex.net/stockquote.asmx |
 | show | response |
-| check response element | Symbol | has value | helloworld |
+| ensure | response element | Symbol | has value | helloworld |
 
 !contents -R2 -g -p -f -h
