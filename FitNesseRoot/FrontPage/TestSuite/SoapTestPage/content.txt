@@ -1,6 +1,8 @@
-!| script | products fixture |
-| add | 7 | Products With ProductId | 0740 | To ShoppingCart |
-| add | 2 | Products With ProductId | 0740 | To ShoppingCart |
-| ensure | that the total price of the products in the shopping cart is | 200 |
+!| script | soap fixture |
+| set soap template file | soap/soapMessage.ftl |
+| set template parameter | valueForTemplate | with value | helloworld |
+| send soap message to | http://www.webservicex.net/stockquote.asmx |
+| show | response |
+| check response element | Symbol | has value | helloworld |
 
 !contents -R2 -g -p -f -h

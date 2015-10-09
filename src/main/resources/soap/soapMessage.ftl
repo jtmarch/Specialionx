@@ -1,8 +1,9 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.nl.ilionx.com/">
-    <soapenv:Header/>
-    <soapenv:Body>
-        <soap:doSomething>
-            <value>${valueForTemplate}</value>
-        </soap:doSomething>
-    </soapenv:Body>
-</soapenv:Envelope>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+    <soap:Header/>
+    <soap:Body>
+        <web:GetQuote>
+            <!--Optional:-->
+            <web:symbol>${valueForTemplate}</web:symbol>
+        </web:GetQuote>
+    </soap:Body>
+</soap:Envelope>
