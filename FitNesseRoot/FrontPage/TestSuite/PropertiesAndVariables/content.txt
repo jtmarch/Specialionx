@@ -1,0 +1,9 @@
+| properties provider | heineken |
+| property name | get property? |
+| browser       | $browser=     |
+| heineken.url  | $pageUrl=     | 
+| productPrice  | $productPrice=     | 
+| nrOfProducts  | $nrOfProducts=     | 
+| someUrl       | $someUrl=     | 
+
+!contents -R2 -g -p -f -h
