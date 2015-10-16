@@ -1,7 +1,7 @@
 !4 Global Includes:
 
 !| scenario | Start Heineken page |
-| start browser | ${BROWSER} | on url | http://localhost:${FITNESSE_PORT}/ |
+| start browser | ${BROWSER} | on url | param:http://localhost:${FITNESSE_PORT}/ |
 | ensure | do | open | on | ${PAGE} |
 | check | is | waitForTitle | Heineken® |
 
