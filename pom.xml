@@ -398,18 +398,8 @@
                                             <arg line="-p 8001"/>
                                             <arg line="-c FrontPage.TestSuite?suite&amp;format=xml&amp;excludeSuiteFilter=NotOnPhantomJS"/>
                                             <arg line="-d ."/>
-                                            <!--<arg value="-xml" />-->
-                                            <!--<arg value="${fitnesse.output.file}.xml" />-->
-                                            <!--<arg value="-html" />-->
-                                            <!--<arg value="${fitnesse.output.file}.html" />-->
                                             <jvmarg value="-DBROWSER=phantomjs"/>
                                         </java>
-                                        <!--<java classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath" fork="true" maxmemory="256m" output="target/fitnesse-test-results.xml" >-->
-                                            <!--<arg value="-c" />-->
-                                            <!--<arg value="FrontPage.TestSuite?pageHistory&amp;resultDate=latest&amp;format=xml" />-->
-                                            <!--<arg value="-p"/>-->
-                                            <!--<arg value="8001" />-->
-                                        <!--</java>-->
 
                                         <!--<target name="convert-fitnesse-results-to-junit">-->
                                             <!--<xslt style="fitnesse2junit.xsl" in="build/fitnesse-test-results.xml" out="build/TEST-fitnesse.xml" />-->
