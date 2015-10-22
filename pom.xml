@@ -394,7 +394,7 @@
                                     <tasks>
                                         <echo taskname="fitnesse" message="Starting FitNesse..."/>
 
-                                        <java classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath" fork="true" failonerror="false" output="target/fitnesse-test-results.xml">
+                                        <java classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath" fork="true" failonerror="false" output="target/fitnesse-test-results.html">
                                             <arg line="-p 8001"/>
                                             <arg line="-c FrontPage.TestSuite?suite&amp;format=html&amp;excludeSuiteFilter=NotOnPhantomJS"/>
                                             <arg line="-d ."/>
