@@ -396,7 +396,7 @@
 
                                         <java classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath" fork="true" failonerror="false" output="target/fitnesse-test-results.xml">
                                             <arg line="-p 8001"/>
-                                            <arg line="-c FrontPage.TestSuite?suite&amp;format=xml&amp;excludeSuiteFilter=NotOnPhantomJS"/>
+                                            <arg line="-c FrontPage.TestSuite?suite&amp;format=html&amp;excludeSuiteFilter=NotOnPhantomJS"/>
                                             <arg line="-d ."/>
                                             <jvmarg value="-DBROWSER=phantomjs"/>
                                         </java>
