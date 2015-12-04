@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot generated="2015-08-07T13:48:33">
-    <browserUrl>https://nl.heineken.com/mijn-account/inloggen?returnUrl=http%3a%2f%2fnl.heineken.com%2fshop</browserUrl>
     <Product>
         <Id>1</Id>
         <productId>0740</productId>
         <productName>HEINEKEN 20L Keg</productName>
-        <productPrice>68.74</productPrice>
+        <productPrice>60.00</productPrice>
         <productCurrency>EUR</productCurrency>
         <ProductUnit>Keg</ProductUnit>
         <productScale>1</productScale>
