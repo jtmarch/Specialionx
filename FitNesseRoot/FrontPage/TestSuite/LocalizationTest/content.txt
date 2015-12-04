@@ -1,0 +1,5 @@
+!| script | Properties Fixture |
+| set country for property loading to | ierland |
+
+
+!contents -R2 -g -p -f -h
