@@ -1,5 +1,21 @@
 !| script | Properties Fixture |
 | set country for property loading to | ierland |
 
+!| script | selenium driver fixture |
+| start browser | firefox | on url | #general://dataroot/startUrl |
+
+!| script | Properties Fixture |
+| set country for property loading to | nederland |
+
+!| script | soap fixture |
+| set soap template file | soap/soapMessage.ftl |
+| set template parameter | valueForTemplate | with value | #general://dataroot/country |
+| send soap message to | #!general://dataroot/soapUrl |
+| show | response |
+| ensure | response element | Symbol | has value | Nederland |
+
+!| script | selenium driver fixture |
+| start browser | firefox | on url | #general://dataroot/startUrl |
+
 
 !contents -R2 -g -p -f -h
