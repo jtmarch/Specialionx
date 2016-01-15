@@ -399,6 +399,7 @@
                                             <arg line="-p 8001"/>
                                             <arg line="-c FrontPage.TestSuite?suite&amp;format=html&amp;excludeSuiteFilter=NotOnPhantomJS"/>
                                             <arg line="-d ."/>
+                                            <arg line="-X "/>
                                         </java>
 
                                         <copy todir="target">
