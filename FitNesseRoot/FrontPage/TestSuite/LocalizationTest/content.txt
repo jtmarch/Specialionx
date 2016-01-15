@@ -2,7 +2,7 @@
 | set country for property loading to | ierland |
 
 !| script | selenium driver fixture |
-| start browser | { "remote": "http://localhost:4444/wd/hub", "browserName" : "firefox" } | on url | #general://dataroot/startUrl |
+| start browser | { "remote": "http://localhost:4444/wd/hub", "browserName" : "chrome" } | on url | #general://dataroot/startUrl |
 | ensure | do | open | on | #general://dataroot/startUrl |
 
 !| script | Properties Fixture |
