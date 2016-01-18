@@ -270,6 +270,12 @@
                                     <goal>test-compile</goal>
                                 </goals>
                                 <configuration>
+                                    <aspectLibraries>
+                                        <aspectLibrary>
+                                            <artifactId>fitnesse-extended-features</artifactId>
+                                            <groupId>com.ilionx.nl</groupId>
+                                        </aspectLibrary>
+                                    </aspectLibraries>
                                     <weaveMainSourceFolder>true</weaveMainSourceFolder>
                                     <weaveDependencies>
                                         <weaveDependency>
@@ -355,6 +361,12 @@
                                     <goal>test-compile</goal>
                                 </goals>
                                 <configuration>
+                                    <aspectLibraries>
+                                        <aspectLibrary>
+                                            <artifactId>fitnesse-extended-features</artifactId>
+                                            <groupId>com.ilionx.nl</groupId>
+                                        </aspectLibrary>
+                                    </aspectLibraries>
                                     <weaveMainSourceFolder>true</weaveMainSourceFolder>
                                     <weaveDependencies>
                                         <weaveDependency>
@@ -439,6 +451,12 @@
                                     <goal>test-compile</goal>
                                 </goals>
                                 <configuration>
+                                    <aspectLibraries>
+                                        <aspectLibrary>
+                                            <artifactId>fitnesse-extended-features</artifactId>
+                                            <groupId>com.ilionx.nl</groupId>
+                                        </aspectLibrary>
+                                    </aspectLibraries>
                                     <weaveMainSourceFolder>true</weaveMainSourceFolder>
                                     <weaveDependencies>
                                         <weaveDependency>
