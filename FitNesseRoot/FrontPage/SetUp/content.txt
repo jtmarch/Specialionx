@@ -6,6 +6,7 @@
 | com.ilionx.nl.mail |
 | com.ilionx.nl.products |
 | com.ilionx.nl.soap |
+| org.aspectj.runtime.internal |
 
 | library |
 | selenium driver fixture |
