@@ -41,7 +41,7 @@ import static org.apache.commons.lang.StringUtils.join;
 /**
  * Main fixture. Starts a browser session and execute commands.
  */
-public class SeleniumDriverFixture extends ExtendedSeleniumDriverFixtures {
+public class SeleniumDriverFixture {
 
 	private static final Logger LOG = LoggerFactory.getLogger(SeleniumDriverFixture.class);
 
